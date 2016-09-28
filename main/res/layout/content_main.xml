@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.waters89gmail.dave.newsapp.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageNavColor"
+        android:paddingEnd="@dimen/activity_standard_padding"
+        android:paddingLeft="@dimen/activity_standard_padding"
+        android:paddingRight="@dimen/activity_standard_padding"
+        android:paddingStart="@dimen/activity_standard_padding">
+
+        <ImageView
+            android:id="@+id/prev_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prev_arrow"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/previous_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/prev_arrow"
+            android:layout_toRightOf="@+id/prev_arrow"
+            android:background="@color/pageNavColor"
+            android:clickable="true"
+            android:padding="@dimen/activity_standard_padding"
+            android:text="@string/previous_page"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAppText"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/page_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/pageNavColor"
+            android:clickable="true"
+            android:padding="@dimen/activity_standard_padding"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAppText"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_toLeftOf="@+id/next_arrow"
+            android:layout_toStartOf="@+id/next_arrow"
+            android:background="@color/pageNavColor"
+            android:clickable="true"
+            android:gravity="end"
+            android:padding="@dimen/activity_standard_padding"
+            android:text="@string/next_page"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAppText"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/next_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next_arrow"
+            android:clickable="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <!-- ScrollView empty_view is only visible when the list has no items. -->
+
+    <ScrollView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pageNavColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/the_guardian_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/theguardian_large" />
+
+                <TextView
+                    android:id="@+id/empty_view_text"
+                    android:layout_width="@dimen/empty_view_text_width"
+                    android:layout_height="@dimen/empty_view_text_height"
+                    android:layout_gravity="center"
+                    android:background="@color/pageNavColor"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_standard_padding"
+                    android:textColor="@color/colorAppText"
+                    tools:text="NOTHING TO SEE HERE!" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

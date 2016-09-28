@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#409ef1</color>
+    <color name="colorPrimaryDark">#050505</color>
+    <color name="colorAccent">#409ef1</color>
+    <color name="colorAppText">@android:color/white</color>
+    <color name="pageNavColor">#a0a1a0</color>
+</resources>

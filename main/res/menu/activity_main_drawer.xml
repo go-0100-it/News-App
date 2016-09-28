@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/search_android"
+            android:icon="@drawable/android_icon"
+            android:title="@string/drawer_menu_item_one" />
+        <item
+            android:id="@+id/search_samsung"
+            android:icon="@drawable/samsung_icon"
+            android:title="@string/drawer_menu_item_two" />
+        <item
+            android:id="@+id/search_programming"
+            android:icon="@drawable/programming_icon"
+            android:title="@string/drawer_menu_item_three" />
+        <item
+            android:id="@+id/search_autonomous_vehicles"
+            android:icon="@drawable/autonomous_car_icon"
+            android:title="@string/drawer_menu_item_four" />
+        <item
+            android:id="@+id/search_robotics"
+            android:icon="@drawable/robot_icon"
+            android:title="@string/drawer_menu_item_five" />
+    </group>
+
+    <item android:title="@string/menu_title">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <!-- Article listview text strings-->
+    <string name="by">Author: </string>
+    <string name="no_detail">** No detail available. **</string>
+    <string name="see_full_article">See full article</string>
+
+    <!-- Custom page navigation bar text strings -->
+    <string name="next_page">Next</string>
+    <string name="previous_page">Prev</string>
+    <string name="page">Page  </string>
+    <string name="of">of  </string>
+
+    <!-- Misc -->
+    <string name="coming_soon">Additional functionality Coming Soon!</string>
+
+    <!-- Action menu strings -->
+    <string name="action_exit">Exit</string>
+
+<!-- Message text strings -->
+    <!-- AsyncLoader progress messages-->
+    <string name="async_task_progress_message_android">Fetching Android articles</string>
+    <string name="async_task_progress_message_samsung">Fetching Samsung articles</string>
+    <string name="async_task_progress_message_programming">Fetching programming articles</string>
+    <string name="async_task_progress_message_autonomous_vehicles">Fetching autonomous vehicle articles</string>
+    <string name="async_task_progress_message_robotics">Fetching robotics articles</string>
+    <string name="loading_next_page">Loading next page.</string>
+    <string name="loading_previous_page">Loading previous page.</string>
+    <string name="continuing_to_load_articles">Continuing to loading articles.</string>
+
+    <!-- Empty view messages -->
+    <string name="empty_view_message_one">Select a search from the drawer menu to load new articles to view.</string>
+    <string name="empty_view_message_two">There doesn\'t seem to be any articles to view!\n\nPlease check that your device has a network connection and try another search.</string>
+<!-- Message text strings -->
+
+    <!-- TheGuardian API URL query string fragments -->
+    <string name="search_api_url_start">http://content.guardianapis.com/search?q=</string>
+    <string name="search_api_url_end">&amp;api-key=7322e5fd-c026-4e3d-b674-9370c63ecad1&amp;show-tags=contributor&amp;show-elements=all&amp;show-fields=byline,thumbnail,shortUrl,headline&amp;show-blocks=all&amp;show-references=author&amp;order-by=newest&amp;use-date=published&amp;order-date=published&amp;format=json&amp;section=technology&amp;page-size=20&amp;page=</string>
+
+    <!-- Navigation drawer strings -->
+    <string name="nav_header_welcome">Get the latest Tech News!!</string>
+    <string name="nav_header_source_URL">http:\\www.theguardian.com</string>
+    <string name="nav_header_source">www.theguardian.com</string>
+    <string name="nav_header_source_text">Source: www.theguardian.com</string>
+    <string name="drawer_menu_item_one">Android Articles</string>
+    <string name="drawer_menu_item_two">Samsung Articles</string>
+    <string name="drawer_menu_item_three">Programming Articles</string>
+    <string name="drawer_menu_item_four">Autonomous Vehicle Articles</string>
+    <string name="drawer_menu_item_five">Robotics Articles</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_title">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+
+</resources>

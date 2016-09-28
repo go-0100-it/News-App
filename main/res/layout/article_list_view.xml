@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_padding_small"
+    android:paddingBottom="@dimen/activity_padding_small"
+    android:baselineAligned="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_small"
+        android:layout_marginStart="@dimen/activity_margin_small"
+        android:paddingStart="@dimen/activity_padding_small"
+        android:paddingLeft="@dimen/activity_padding_small"
+        android:layout_marginRight="@dimen/activity_margin_small"
+        android:layout_marginEnd="@dimen/activity_margin_small"
+        android:paddingEnd="@dimen/activity_padding_small"
+        android:paddingRight="@dimen/activity_padding_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_padding_xx_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/activity_text_x_large"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Apple offers big cash rewards for help finding security bugs"
+            android:id="@+id/headline_textview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_padding_small"
+            android:textSize="@dimen/author_text_size"
+            tools:text="Aug 4, 2016 22:49Z"
+            android:id="@+id/published_date_textview2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_small"
+        android:layout_marginStart="@dimen/activity_margin_small"
+        android:paddingStart="@dimen/activity_padding_small"
+        android:paddingLeft="@dimen/activity_padding_small"
+        android:layout_marginRight="@dimen/activity_padding_small"
+        android:layout_marginEnd="@dimen/activity_padding_small"
+        android:paddingEnd="@dimen/activity_padding_small"
+        android:paddingRight="@dimen/activity_padding_small"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/image_view_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/activity_padding_small"
+            android:paddingRight="@dimen/activity_padding_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_padding_xx_small"
+                android:textSize="@dimen/author_text_size"
+                tools:text="Aug 4, 2016 22:49Z"
+                android:id="@+id/published_date_textview" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/thumbnail_view_width"
+                android:layout_height="@dimen/thumbnail_view_height"
+                android:layout_below="@id/published_date_textview">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="@dimen/thumbnail_view_width"
+                android:layout_height="@dimen/thumbnail_view_height"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:id="@+id/thumbnail_imageview"
+                tools:src="@drawable/example"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/activity_padding_small"
+            android:paddingRight="@dimen/activity_padding_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_padding_xxx_small"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/author_text_size"
+                tools:text="JIM FINKLE"
+                android:id="@+id/author_textview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/activity_text_small"
+            android:ellipsize="end"
+            android:maxLines="7"
+            android:minLines="7"
+            tools:text="LAS VEGAS Apple Inc said it plans to offer rewards of up to $200,000 (£152,433) to researchers who find critical security bugs in its products, joining dozens of firms that already offer payments for help uncovering flaws in their products."
+            android:id="@+id/detail_stub_textview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_padding_xx_small"
+            android:textSize="@dimen/activity_text_x_small"
+            android:layout_gravity="end"
+            android:text="@string/see_full_article"
+            android:id="@+id/website_link" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
